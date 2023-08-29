@@ -1,1 +1,1 @@
-
+https://dailyjournalblogs.onrender.com/
