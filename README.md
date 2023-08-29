@@ -1,5 +1,3 @@
-https://dailyjournalblogs.onrender.com/
-
 # DAILY-JOURNAL---The-Blog-Website-Full-Version-
 
 ## Introduction
