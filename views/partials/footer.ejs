@@ -1,0 +1,32 @@
+</div>
+<div class="footer-padding"></div>
+<div class="footer">
+  <p>Made with ❤️ by Bhaskar Kulshrestha</p>
+</div>
+</div>
+
+<script>
+
+
+
+  // Show popup message
+
+  const popupMessage = document.querySelector('.popup-message');
+  const composeLink = document.getElementById('compose');
+  popupMessage.classList.add('show');
+  composeLink.classList.add('glow');
+
+  // Hide popup message and remove glow effect from compose link after 5 seconds
+
+  setTimeout(() => {
+    popupMessage.classList.remove('show');
+    composeLink.classList.remove('glow');
+  }, 2000);
+
+  popupMessage.setAttribute("style", "pointer-events: none");
+
+</script>
+
+</body>
+
+</html>

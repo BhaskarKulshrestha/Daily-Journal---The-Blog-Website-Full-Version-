@@ -1,0 +1,1 @@
+https://dailyjournals.onrender.com/

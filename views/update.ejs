@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+
+<h1>Update ⌚</h1>
+<form class="" action="/update" method="post">
+  <div class="form-group">
+    <label><big>Title</big></label>
+    <!-- Pre-fill the title input field with the existing title -->
+    <input class="form-control" type="text" name="postTitle" value="<%= title %>">
+    <label><big>Post</big></label>
+    <!-- Pre-fill the content textarea with the existing content -->
+    <textarea class="form-control" name="postBody" rows="5" cols="30"><%= content %></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+<hr>
+<div style="text-align: center;margin-top: 5%;">
+
+  <a href="/"><i class="fas fa-solid fa-house-user" style="font-size:50px;margin-right: 50px;color: red;"></i></a>
+  <a href="/contact"><i class="fas fa-phone" style="font-size:50px;margin-right: 50px;color: orange;"></i></a>
+  <a href="/about"><i class="fas fa-regular fa-address-card fa-2xl" style="font-size:50px;margin-right: 50px;color: rgb(123, 198, 11);"></i></a>
+  
+  <a href="/compose"><i class="fas fa-solid fa-pen-nib"style="font-size:50px;"></i></a>
+</div>
+
+<%- include("partials/footer"); -%>

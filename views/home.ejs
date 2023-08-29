@@ -1,0 +1,52 @@
+<%- include("partials/header"); -%>
+  <h1>Home</h1>
+  <p>
+    <big><strong>Welcome to Daily Journal - Your Window to the World of Inspiration and Discovery!</strong></big>
+    <br>
+    <%= startingContent %>
+  </p>
+  
+
+  <div class="popup-message">
+    Please use the Compose button on the Navigation bar to write New Blogs!
+  </div>
+
+  <script>
+    function redirectToUpdate(postId) {
+      window.location.href = `/update/${postId}`;
+    }
+  </script>
+
+  <% posts.forEach(function(post){ %>
+
+    <form action="/delete" method="post">
+      <div class="item" style="z-index: 9;">
+        <h1>
+          <%=post.title%>
+        </h1>
+        <input type="checkbox" id="<%= post._id %>" name="checkbox" value="<%= post._id %>"
+          onChange="this.form.submit()"></input>
+
+        <label for="<%= post._id %>" style="color: #e90000; cursor: pointer;">❌ DELETE THIS BLOG (by clicking the given checkbox) 
+        </label>
+
+      <br>
+
+        <input type="checkbox" id="update_<%= post._id %>" name="checkboxupdate" value="<%= post._id %>"
+        onChange="redirectToUpdate('<%= post._id %>')">
+
+      <label for="update_<%= post._id %>" style="color: #1aeb12; cursor: pointer;">🔁 UPDATE THIS BLOG (by clicking the given checkbox)
+      </label>
+
+
+        <p>
+          <strong><em><%=post.content.substring(0, 100) + " .............." %></em></strong>
+            <a href="/posts/<%=post._id%>"><big> Read More 🔍</big></a>
+        </p>
+      </div>
+    </form>
+    <hr>
+    <% }) %>
+
+
+      <%- include("partials/footer"); -%>
