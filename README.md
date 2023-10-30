@@ -3,7 +3,7 @@
 ## Introduction
 The "DAILY-JOURNAL - Your Blog Area" is a web application designed for users who want to maintain a personal blog. This repository provides the complete source code of the application along with the necessary documentation to run it on a local machine.
 
-**------------------------------ > [CHECK OUT THE WORKING APPLICATION](https://dailyjournalblogs.onrender.com) < -------------------------------------**
+**------------------------------ >🔗 [CHECK OUT THE WORKING APPLICATION](https://dailyjournalblogs.onrender.com) 🔗< -------------------------------------**
 
 ## Features
 The "DAILY-JOURNAL - Your Blog Area" application provides the following features to its users:
